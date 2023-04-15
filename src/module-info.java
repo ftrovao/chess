@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author trova
+ *
+ */
+module chessSystem {
+}
