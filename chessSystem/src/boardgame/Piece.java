@@ -13,7 +13,7 @@ public class Piece {
 	// and setters for position attribute
 	public Piece(Board board) {
 		this.board = board;
-		position = null;
+		 
 	}
 
 	//only classes and subclasses in the same pack will be able to access the board
