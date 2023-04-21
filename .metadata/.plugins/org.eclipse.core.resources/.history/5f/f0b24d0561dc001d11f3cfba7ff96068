@@ -1,0 +1,10 @@
+package chess;
+import boardgame.Board;
+
+public class ChessMatch {
+	
+	//a match needs a board
+	private Board board;
+	
+	
+}
