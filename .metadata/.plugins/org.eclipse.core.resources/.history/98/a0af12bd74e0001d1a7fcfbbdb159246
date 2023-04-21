@@ -41,6 +41,7 @@ public class ChessMatch {
 		Piece capturedPiece = board.removePiece(target);
 		board.placePiece(p, target);
 		return capturedPiece;
+		return 
 	}
 	private void validateSourcePosition(Position position) {
 		if(!board.positionExists(position)) {
