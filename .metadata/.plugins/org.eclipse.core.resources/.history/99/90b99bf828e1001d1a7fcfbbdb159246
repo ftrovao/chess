@@ -31,7 +31,6 @@ public abstract class Piece {
 	
 	//hook method - concrete method that calls abstract method
 	public boolean possibleMove(Position position) {
-		
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	

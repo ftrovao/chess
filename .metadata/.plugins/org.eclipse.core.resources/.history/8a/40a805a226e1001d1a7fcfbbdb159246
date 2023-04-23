@@ -46,18 +46,12 @@ public class ChessMatch {
 		if(!board.positionExists(position)) {
 			throw new ChessException("there is no piece in source position");
 		}
-		if(!board.piece(position).isThereAnyPossibleMove()) {
-			throw new ChessException("there is no possible moves for the chosen piece");
-		}
 	}
 	private void placeNewPiece(char column, int row, ChessPiece piece) {
 		board.placePiece(piece, new ChessPosition(column, row).toPosition());
 	}
 	
 	private void initialSetup() {
-		//placeNewPiece('c', 1, new Rook(***board, Color.WHITE));this is the link
-		//between ChessPiece and Board board create (8x8)
-		
 		placeNewPiece('c', 1, new Rook(board, Color.WHITE));
         placeNewPiece('c', 2, new Rook(board, Color.WHITE));
         placeNewPiece('d', 2, new Rook(board, Color.WHITE));
