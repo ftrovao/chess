@@ -22,7 +22,7 @@ public class Rook extends ChessPiece {
 		// method getBoard() was create in Piece in order to access Board board. This is
 		// why
 		// there's a relation between Piece and Board. Piece has access to Board board.
- 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
 		Position p = new Position(0, 0);
 
@@ -35,8 +35,7 @@ public class Rook extends ChessPiece {
 		// while will stop when there's a piece
 		// this piece encoutered will be analysed in the if below
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			//////////ERRRRROOO
-			mat[p.getRow()][p.getColumn()] = true;
+			mat[getBoard().getRows()][getBoard().getRows()] = true;
 		}
 
 		// left
@@ -48,7 +47,7 @@ public class Rook extends ChessPiece {
 		// while will stop when there's a piece
 		// this piece encoutered will be analysed in the if below
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getRow()][p.getColumn()] = true;
+			mat[getBoard().getRows()][getBoard().getRows()] = true;
 		}
 
 		// right
@@ -60,7 +59,7 @@ public class Rook extends ChessPiece {
 		// while will stop when there's a piece
 		// this piece encoutered will be analysed in the if below
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getRow()][p.getColumn()] = true;
+			mat[getBoard().getRows()][getBoard().getRows()] = true;
 		}
 
 		// below
@@ -72,7 +71,7 @@ public class Rook extends ChessPiece {
 		// while will stop when there's a piece
 		// this piece encoutered will be analysed in the if below
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getRow()][p.getColumn()] = true;
+			mat[getBoard().getRows()][getBoard().getRows()] = true;
 		}
 		return mat;
 	}
