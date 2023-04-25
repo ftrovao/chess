@@ -2,5 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="boardgame.Board"/>
     <fullyQualifiedTypeName name="chess.ChessMatch"/>
+    <fullyQualifiedTypeName name="application.UI"/>
     <fullyQualifiedTypeName name="boardgame.Position"/>
 </qualifiedTypeNameHistroy>
