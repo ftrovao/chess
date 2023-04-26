@@ -24,9 +24,7 @@ public class King extends ChessPiece {
 		// piece int the position is not null AND is an adversary piece
 		// p.getColor()= color of the adverdary piece
 		// getCologr() => color of the king
-		
-		//either space is empty (null) or there's an opponent piece
-		return p == null || p.getColor() != getColor();
+		return p != null && p.getColor() != getColor();
 	}
 
 	@Override
